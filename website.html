@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://i.pinimg.com/736x/16/ef/29/16ef29479eea4687d442988fd5377192.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .warning-text {
+            color: white;
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+            animation: blink 1s infinite alternate;
+        }
+        
+        @keyframes blink {
+            from {
+                opacity: 1;
+                color: white;
+                text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.8);
+            }
+            to {
+                opacity: 0.7;
+                color: rgb(218, 186, 4);
+                text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="warning-text">YOUR DATA IS BEING STOLEN</div>
+</body>
+</html>
